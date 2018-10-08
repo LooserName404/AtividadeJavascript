@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="br" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>A little text editor :)</title>
+  </head>
+
+  <body>
+    <div class="container-fluid">
+
+      <form id="myForm">
+        <div class="form-group">
+          <label for="textEntry">Enter text</label>
+          <textarea class="form-control" id="textEntry" rows="5"></textarea>
+        </div>
+      </form>
+        <div class="row">
+          <div class="col-xs-12 col-md-6">
+            <button class="btn btn-outline-primary btn-gp-1" id="boldme">B</button>
+            <button class="btn btn-outline-primary btn-gp-1" id="italicme">I</button>
+            <button class="btn btn-outline-primary btn-gp-1" id="underlineme">U</button>
+          </div>
+          <div class="col-xs-12 col-md-6">
+            <button class="btn btn-primary btn-gp-2" id="submiter">Submit</button>
+          </div>
+        </div>
+
+      <p id="printmaster"></p>
+
+    </div>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+    <script src="https://npmcdn.com/tether@1.2.4/dist/js/tether.min.js"></script>
+    <script src="js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+
+</html>

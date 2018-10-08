@@ -1,0 +1,48 @@
+@-webkit-keyframes roll {
+from { -webkit-transform: rotate(0deg) }
+to   { -webkit-transform: rotate(360deg) }
+}
+
+@-moz-keyframes roll {
+from { -moz-transform: rotate(0deg) }
+to   { -moz-transform: rotate(360deg) }
+}
+
+@keyframes roll {
+from { transform: rotate(0deg) }
+to   { transform: rotate(360deg) }
+}
+
+body {
+  font-family: Tahoma, Geneva, sans-serif;
+  -moz-animation-name: roll;
+  -moz-animation-duration: 2s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-name: roll;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-iteration-count: 1;
+}
+
+.btn {
+  margin: 3px;
+}
+
+.btn.btn-gp-1{
+  font-family: monospace, sans-serif;
+}
+
+.btn:hover {
+  cursor: pointer;
+  weight: random;
+}
+
+.btn.active{
+  background-color:red;
+  border-color: red;
+  -moz-animation-name: roll;
+  -moz-animation-duration: 1s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-name: roll;
+  -webkit-animation-duration: 1s;
+  -webkit-animation-iteration-count: 1;
+}
